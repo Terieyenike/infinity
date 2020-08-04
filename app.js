@@ -1,3 +1,8 @@
+import config from './config.js';
+
+const { api_key } = config;
+
+
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
@@ -10,7 +15,7 @@ let isInitialLoad = true;
 
 // Unsplash API
 let initialCount = 5;
-const apiKey = 'API_KEY_HERE';
+const apiKey = api_key;
 const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${initialCount}&content_filter=high`;
 
 function updateAPIURLWithNewCount(picCount) {
