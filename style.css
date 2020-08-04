@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+@import './reset.css';
+
+body {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: whitesmoke;
+  text-align: center;
+}
+
+
+
+:root {
+  --primaryFont: 'Bebas Neue', sans-serif;
+  --secondaryFont: 'Poppins', sans-serif;
+}
+
+h1 {
+  margin: 1.56em 0 0.98em;
+  font-size: 1.25rem;
+  letter-spacing: 5px;
+  font-family: var(--primaryFont);
+  padding: 0 1em;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  margin: 0.625em;
+}
+
+.image-container img {
+  box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .3em;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    margin: 0 1.5em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .image-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
