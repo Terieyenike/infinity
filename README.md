@@ -36,6 +36,6 @@ Favicon generator [realfavicongenerator](https://realfavicongenerator.net/)
 
 Netlify
 
-Project [view]()
+Project [view](https://terieyenike.github.io/infinity)
 
 + Clone the repo and contribute if you find this useful and definitely give it a star.
